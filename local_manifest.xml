@@ -6,7 +6,7 @@
 
   <!-- Trees -->
         <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="wHo-EM-i" revision="conquer-wip"/>
-        <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender" remote="wHo-EM-i" revision="hmp-backup" />
+        <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender" remote="wHo-EM-i" revision="hmp" />
         <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="wHo-EM-i" revision="r11-wip" />
 
 </manifest>
