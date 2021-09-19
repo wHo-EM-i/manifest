@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  
+
   <remote name="wHo-EM-i"
           fetch="https://github.com/wHo-EM-i" />
 
   <!-- Trees -->
-        <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="wHo-EM-i" revision="eleven"/>
-        <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender" remote="wHo-EM-i" revision="test-eas" />
-        <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="wHo-EM-i" revision="r11.0" />
-        
+        <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="wHo-EM-i" revision="revenge"/>
+        <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender" remote="wHo-EM-i" revision="hmp" />
+        <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="wHo-EM-i" revision="r11-wip" />
+
 </manifest>
