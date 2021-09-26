@@ -7,6 +7,13 @@
   <remote name="wHo-EM-i"
           fetch="https://github.com/wHo-EM-i" />
 
+ <!-- Replacements -->
+        <remove-project name="platform/build/soong" />
+        <project path="build/soong" name="build_soong" remote="wHo-EM-i" revision="11.0" >
+        <linkfile src="root.bp" dest="Android.bp" />
+        <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+        </project>
+        
   <!-- Trees -->
         <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="wHo-EM-i" revision="cafex"/>
         <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender" remote="wHo-EM-i" revision="hmp-backup" />
