@@ -8,7 +8,7 @@
           fetch="https://github.com/wHo-EM-i" />
 
  <!-- Replacements -->
-        <remove-project name="platform/build/soong" />
+        <remove-project name="build_soong" />
         <project path="build/soong" name="build_soong" remote="wHo-EM-i" revision="11.0" >
         <linkfile src="root.bp" dest="Android.bp" />
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
