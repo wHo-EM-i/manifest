@@ -17,7 +17,7 @@
   <!-- Trees -->
         <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="wHo-EM-i" revision="cafex-wip"/>
         <project path="device/xiaomi/sdm660-common" name="device_sdm660-common" remote="wHo-EM-i" revision="cafex"/>
-        <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender" remote="wHo-EM-i" revision="hmp" />
+        <project path="kernel/xiaomi/sdm660" name="kernel_xiaomi_lavender" remote="wHo-EM-i" revision="hmp" />
         <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="wHo-EM-i" revision="cafex" />
         <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="wHo-EM-i" revision="cafex"/>
         <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="pixel"  clone-depth="1" />
