@@ -13,11 +13,11 @@
         <linkfile src="root.bp" dest="Android.bp" />
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
         </project>
-        
+
   <!-- Trees -->
-        <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="wHo-EM-i" revision="cafex"/>
-        <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender" remote="wHo-EM-i" revision="hmp-backup" />
-        <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="wHo-EM-i" revision="r11-wip" />
+        <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="wHo-EM-i" revision="cafex-wip"/>
+        <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender" remote="wHo-EM-i" revision="test-eas" />
+        <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="wHo-EM-i" revision="cafex-wip" />
         <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="pixel"  clone-depth="1" />
 
 </manifest>
