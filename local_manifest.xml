@@ -16,5 +16,6 @@
         <project path="kernel/xiaomi/sdm660" name="kernel_xiaomi_lavender" remote="wHo-EM-i" revision="hmp" />
         <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="wHo-EM-i" revision="cafex" />
         <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="wHo-EM-i" revision="cafex"/>
-        
+        <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="wHo-EM-i" revision="eleven"  clone-depth="1" />
+
 </manifest>
