@@ -4,7 +4,7 @@
           fetch="https://github.com/wHo-EM-i" />
 
 
-  <remote  name="lineage"
+  <remote  name="los"
           fetch="https://github.com/LineageOS" />
 
  <!-- Replacements
