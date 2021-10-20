@@ -5,7 +5,7 @@
 
 
   <remote  name="xd"
-          fetch="https://github.com/LineageOS" />
+          fetch="https://github.com/xyz-prjkt" />
 
  <!-- Replacements
         <remove-project name="build_soong" />
