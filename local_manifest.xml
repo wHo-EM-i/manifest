@@ -3,10 +3,6 @@
   <remote name="wHo-EM-i"
           fetch="https://github.com/wHo-EM-i" />
 
-
-  <remote  name="arrow"
-          fetch="https://github.com/ArrowOS" />
-
  <!-- Replacements
         <remove-project name="build_soong" />
         <project path="build/soong" name="build_soong" remote="wHo-EM-i" revision="11.0" >
