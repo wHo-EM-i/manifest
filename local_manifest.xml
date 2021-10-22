@@ -3,14 +3,17 @@
   <remote name="wHo-EM-i"
           fetch="https://github.com/wHo-EM-i" />
 
+  <remote  name="xd"
+          fetch="https://github.com/ChuckProjekt" />
+
  <!-- Replacements
         <remove-project name="build_soong" />
         <project path="build/soong" name="build_soong" remote="wHo-EM-i" revision="11.0" >
         <linkfile src="root.bp" dest="Android.bp" />
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-        </project>
-        <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="wHo-EM-i" revision="eleven"  clone-depth="1" />
-  -->
+        </project>   -->
+        <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="xd" revision="twelve"  clone-depth="1" />
+
 
   <!-- caf blobs
         <remove-project name="platform_hardware_qcom_audio" />
