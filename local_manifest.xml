@@ -6,13 +6,16 @@
   <remote  name="xd"
           fetch="https://github.com/ChuckProjekt" />
 
+  <remote  name="xxd"
+          fetch="https://github.com/Chuck439" />
  <!-- Replacements
         <remove-project name="build_soong" />
         <project path="build/soong" name="build_soong" remote="wHo-EM-i" revision="11.0" >
         <linkfile src="root.bp" dest="Android.bp" />
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
         </project>   -->
-        <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="xd" revision="twelve"  clone-depth="1" />
+        <remove-project name="android_vendor_arrow" />
+        <project path="vendor/arrow" name="android_vendor_arrow" remote="xxd" revision="arrow-12.0"  clone-depth="1" />
 
 
   <!-- caf blobs
