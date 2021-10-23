@@ -8,6 +8,9 @@
 
   <remote  name="xxd"
           fetch="https://github.com/Chuck439" />
+
+  <remote  name="strm"
+          fetch="https://github.com/stormbreaker-project" />
  <!-- Replacements
         <remove-project name="build_soong" />
         <project path="build/soong" name="build_soong" remote="wHo-EM-i" revision="11.0" >
@@ -28,7 +31,7 @@
   -->
   <!-- Trees -->
         <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="wHo-EM-i" revision="12"/>
-        <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender" remote="wHo-EM-i" revision="test-eas" />
+        <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender" remote="strm" revision="oldcam-eas" clone-depth="1" />
         <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="wHo-EM-i" revision="12" />
 
 </manifest>
