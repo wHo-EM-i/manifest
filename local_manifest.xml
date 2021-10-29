@@ -9,8 +9,8 @@
           fetch="https://github.com/ChuckProjekt" />
 
  <!-- Replacements -->
-        <remove-project name="device_qcom_common" />
-    <!--    <remove-project name="build_soong" />
+  <!-- <remove-project name="device_qcom_common" />
+        <remove-project name="build_soong" />
         <project path="build/soong" name="build_soong" remote="wHo-EM-i" revision="11.0" clone-depth="1" >
         <linkfile src="root.bp" dest="Android.bp" />
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
