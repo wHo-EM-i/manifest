@@ -9,13 +9,13 @@
           fetch="https://github.com/ChuckProjekt" />
 
  <!-- Replacements -->
-  <!-- <remove-project name="device_qcom_common" />
-        <remove-project name="build_soong" />
+        <remove-project name="device_qcom_common" />
+  <!--       <remove-project name="build_soong" />
         <project path="build/soong" name="build_soong" remote="wHo-EM-i" revision="11.0" clone-depth="1" >
         <linkfile src="root.bp" dest="Android.bp" />
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
         </project>-->
-        <project path="vendor/qcom/common" name="vendor_qcom_common" revision="11.0" remote="wHo-EM-i" clone-depth="1" />
+        <project path="vendor/qcom/common" name="vendor_qcom_common" revision="12" remote="wHo-EM-i" clone-depth="1" />
 
   <!-- caf blobs -->
         <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" revision="11" remote="wHo-EM-i" clone-depth="1" />
