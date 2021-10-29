@@ -2,21 +2,23 @@
 <manifest>
   <remote name="wHo-EM-i"
           fetch="https://github.com/wHo-EM-i" />
-  <remote name="404"
-          fetch="https://github.com/P-404" />
+  <remote name="cafex"
+          fetch="https://github.com/CAF-Extended" />
   <remote  name="ce"
           fetch="https://github.com/ChuckProjekt" />
  <!-- Replacements -->
- <!--       <remove-project name="device_qcom_common" />
-        <remove-project name="build_soong" />
+ <!--   <remove-project name="build_soong" />
         <project path="build/soong" name="build_soong" remote="wHo-EM-i" revision="11.0" clone-depth="1" >
         <linkfile src="root.bp" dest="Android.bp" />
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
         </project>-->
         <project path="vendor/qcom/common" name="vendor_qcom_common" revision="12" remote="wHo-EM-i" clone-depth="1" />
   <!-- caf blobs -->
+        <remove-project name="hw_audio" />
+        <remove-project name="hw_display" />
+        <remove-project name="hw_media" />
         <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" revision="11" remote="wHo-EM-i" clone-depth="1" />
-<!-- <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" /> -->
+        <remove-project name="xd_vendor_qcom_opensource_commonsys-intf_display" />
         <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" revision="eleven" remote="wHo-EM-i" clone-depth="1" />
         <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" revision="11" remote="wHo-EM-i" clone-depth="1" />
   <!-- Trees -->
