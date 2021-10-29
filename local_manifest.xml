@@ -11,7 +11,6 @@
         <linkfile src="root.bp" dest="Android.bp" />
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
         </project>
-        <remove-project name="vendor_qcom_common" />
         <project path="vendor/qcom/common" name="vendor_qcom_common" revision="11.0" remote="wHo-EM-i" />
 
   <!-- caf blobs -->
