@@ -14,6 +14,7 @@
         </project>
         -->
         <remove-project name="xd_vendor_qcom_opensource_commonsys-intf_display" />
+        <remove-project name="xd_vendor_qcom_opensource_display-commonsys" />
         <project path="vendor/qcom/common" name="vendor_qcom_common" revision="12" remote="wHo-EM-i" clone-depth="1" />
   <!-- caf blobs -->
         <remove-project name="hw_audio" />
