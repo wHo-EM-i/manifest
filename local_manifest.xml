@@ -10,6 +10,8 @@
           fetch="https://github.com/xyz-prjkt" />
   <remote  name="xdd"
           fetch="https://github.com/xdroid-CAF" />
+  <remote  name="arrow"
+          fetch="https://github.com/ArrowOS" />
  <!-- Replacements -->
  <!--   <remove-project name="build_soong" />
         <project path="build/soong" name="build_soong" remote="wHo-EM-i" revision="11.0" clone-depth="1" >
@@ -44,9 +46,9 @@
           <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp"/>
           <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk"/>
         </project>
-        <project path="hardware/qcom-caf/msm8998/audio" name="hw_audio" revision="eleven_caf_msm8998" remote="xzd" />
         <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" revision="12-caf" remote="wHo-EM-i" clone-depth="1" />
-        <project path="hardware/qcom-caf/msm8998/media" name="hw_media" revision="eleven_caf_msm8998" remote="xzd" />
+        <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="arrow" revision="arrow-12.0-caf-msm8998" />
+        <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" groups="qcom" remote="arrow" revision="arrow-12.0-caf-msm8998" />
   <!-- Trees -->
         <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="wHo-EM-i" revision="12-caf" clone-depth="1" />
         <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="wHo-EM-i" revision="12" clone-depth="1" />
