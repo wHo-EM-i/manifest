@@ -2,8 +2,8 @@
 <manifest>
   <remote name="wHo-EM-i"
           fetch="https://github.com/wHo-EM-i" />
-  <remote name="404"
-          fetch="https://github.com/P-404" />
+  <remote name="AOSPA-S"
+          fetch="https://github.com/AOSPA" />
 
   <remote  name="xd"
           fetch="https://github.com/ChuckProjekt" />
@@ -11,7 +11,7 @@
  <!-- Replacements -->
         <remove-project name="platform/vendor/qcom-opensource/usb" />
         <remove-project name="platform/hardware/libhardware" />
-        <project name="platform/hardware/libhardware" path="hardware/libhardware" remote="404" revision="rippa" clone-depth="1" />
+        <project name="android_hardware_libhardware" path="hardware/libhardware" remote="AOSPA-S" revision="sapphire" clone-depth="1" />
         <remove-project name="build_soong" />
         <project path="build/soong" name="build_soong" remote="wHo-EM-i" revision="12" clone-depth="1" >
         <linkfile src="root.bp" dest="Android.bp" />
