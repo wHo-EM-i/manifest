@@ -10,6 +10,8 @@
 
  <!-- Replacements -->
         <remove-project name="platform/vendor/qcom-opensource/usb" />
+        <remove-project name="platform/hardware/libhardware" />
+        <project name="platform/hardware/libhardware" path="hardware/libhardware" remote="404" revision="rippa" clone-depth="1" />
         <remove-project name="build_soong" />
         <project path="build/soong" name="build_soong" remote="wHo-EM-i" revision="12" clone-depth="1" >
         <linkfile src="root.bp" dest="Android.bp" />
