@@ -20,10 +20,10 @@
         <project path="vendor/qcom/common" name="vendor_qcom_common" revision="12" remote="wHo-EM-i" clone-depth="1" />
 
   <!-- caf blobs -->
-        <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" revision="11.0-caf" remote="wHo-EM-i" clone-depth="1" />
+        <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" revision="arrow-12-caf-msm8998" remote="wHo-EM-i" clone-depth="1" />
         <remove-project name="vendor-qcom-opensource-display-commonsys-intf" />
-        <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" revision="11.0-caf" remote="wHo-EM-i" clone-depth="1" />
-        <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" revision="11.0-caf" remote="wHo-EM-i" clone-depth="1" />
+        <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" revision="arrow-12-caf-msm8998" remote="wHo-EM-i" clone-depth="1" />
+        <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" revision="arrow-12-caf-msm8998" remote="wHo-EM-i" clone-depth="1" />
 
   <!-- Trees -->
         <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="wHo-EM-i" revision="12" clone-depth="1" />
