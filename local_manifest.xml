@@ -7,6 +7,7 @@
 
   <remote  name="xd"
           fetch="https://github.com/ChuckProjekt" />
+  <project name="device/sample"/>        
 
  <!-- Replacements -->
         <remove-project name="platform/vendor/qcom-opensource/usb" />
@@ -21,6 +22,9 @@
         <project path="vendor/qcom/common" name="vendor_qcom_common" revision="12" remote="wHo-EM-i" clone-depth="1" />
 
   <!-- caf blobs -->
+  <remove-project name="android_hardware_qcom_audio" />
+  <remove-project name="android_hardware_qcom_display" />
+  <remove-project name="android_hardware_qcom_media" />
         <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" revision="12" remote="wHo-EM-i" clone-depth="1" />
         <remove-project name="vendor-qcom-opensource-display-commonsys-intf" />
         <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor-qcom-opensource-display-commonsys-intf" revision="12.0" remote="wHo-EM-i" clone-depth="1" />
