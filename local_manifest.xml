@@ -4,50 +4,23 @@
           fetch="https://github.com/wHo-EM-i" />
   <remote name="cafex"
           fetch="https://github.com/CAF-Extended" />
-  <remote  name="ce"
-          fetch="https://github.com/ChuckProjekt" />
   <remote  name="xzd"
           fetch="https://github.com/xyz-prjkt" />
-  <remote  name="xdd"
-          fetch="https://github.com/xdroid-CAF" />
-  <remote  name="arrow"
-          fetch="https://github.com/ArrowOS" />
+  <remote name="AOSPA-S"
+          fetch="https://github.com/AOSPA" />
  <!-- Replacements -->
- <!--   <remove-project name="build_soong" />
-        <project path="build/soong" name="build_soong" remote="wHo-EM-i" revision="11.0" clone-depth="1" >
-        <linkfile src="root.bp" dest="Android.bp" />
-        <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-        </project>
-        <project path="hardware/qcom-caf/msm8998/display" name="hw_display" revision="twelve_caf_msm8998" remote="xzd" />
-        <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="arrow" revision="arrow-12.0-caf-msm8998" />
-        <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" groups="qcom" remote="arrow" revision="arrow-12.0-caf-msm8998" />
-        -->
+        <remove-project name="platform/hardware/libhardware" />
+        <project name="android_hardware_libhardware" path="hardware/libhardware" remote="AOSPA-S" revision="sapphire" clone-depth="1" />
         <remove-project name="xd_vendor_qcom_opensource_commonsys-intf_display" />
         <remove-project name="xd_vendor_qcom_opensource_display-commonsys" />
         <remove-project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" />
         <project path="vendor/qcom/common" name="vendor_qcom_common" revision="12" remote="wHo-EM-i" clone-depth="1" />
   <!-- caf blobs -->
-        <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor-qcom-opensource-display-commonsys-intf" revision="12.0" remote="cafex" />
+        <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor-qcom-opensource-display-commonsys-intf" revision="12.0" remote="wHo-EM-i" clone-depth="1" />
         <project path="device/qcom/common" name="device_qcom_common" revision="12.0" remote="cafex" />
-        <remove-project name="hw_audio" />
-        <remove-project name="hw_display" />
-        <remove-project name="hw_media" />
-        <remove-project name="xd_hardware_qcom-caf_common" />
-        <project path="hardware/qcom-caf/common" name="xd_hardware_qcom-caf_common" remote="xd"  >
-          <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp"/>
-          <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk"/>
-          <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp"/>
-          <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk"/>
-          <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp"/>
-          <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk"/>
-          <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/pn5xx/Android.bp"/>
-          <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/pn5xx/Android.mk"/>
-          <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp"/>
-          <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk"/>
-        </project>
         <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" revision="12-caf" remote="wHo-EM-i" clone-depth="1" />
-        <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" revision="11" remote="wHo-EM-i" clone-depth="1" />
-        <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" revision="11" remote="wHo-EM-i" clone-depth="1" />
+        <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" revision="12" remote="wHo-EM-i" clone-depth="1" />
+        <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" revision="12" remote="wHo-EM-i" clone-depth="1" />
   <!-- Trees -->
         <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="wHo-EM-i" revision="12-caf" clone-depth="1" />
         <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="wHo-EM-i" revision="12" clone-depth="1" />
