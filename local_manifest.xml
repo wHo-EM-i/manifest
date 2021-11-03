@@ -47,13 +47,6 @@
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
   </project>
         <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" revision="12-caf" groups="pdk-qcom,qcom,qcom_display" remote="wHo-EM-i" clone-depth="1" />
-        <remove-project name="xd_hardware_qcom-caf_kernel-headers" />
-        <project path="hardware/qcom-caf/kernel-headers" name="xd_hardware_qcom-caf_kernel-headers" remote="xd" revision="twelve" >
-          <linkfile src="msm-4.4" dest="hardware/qcom-caf/msm8998/kernel-headers" />
-          <linkfile src="msm-4.9" dest="hardware/qcom-caf/sdm845/kernel-headers" />
-          <linkfile src="msm-4.14" dest="hardware/qcom-caf/sm8150/kernel-headers" />
-          <linkfile src="msm-5.4" dest="hardware/qcom-caf/sm8350/kernel-headers" />
-        </project>
   <!-- Trees -->
         <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="wHo-EM-i" revision="12-caf" clone-depth="1" />
         <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="wHo-EM-i" revision="12" clone-depth="1" />
