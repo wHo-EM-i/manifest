@@ -7,6 +7,11 @@
 
   <remote  name="xd"
           fetch="https://github.com/ChuckProjekt" />
+  <remote  name="arrow"
+          fetch="https://github.com/ArrowOS"
+          review="https://review.arrowos.net/"
+          revision="refs/heads/arrow-12.0" />
+
   <project name="device/sample"/>
 
  <!-- Replacements -->
@@ -20,7 +25,7 @@
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
         </project>
         <project path="vendor/qcom/common" name="vendor_qcom_common" revision="12" remote="wHo-EM-i" clone-depth="1" />
-        <project name="platform/external/tinyxml" path="external/tinyxml" remote="aosp" />
+        <project path="external/tinyxml" name="android_external_tinyxml" remote="arrow" />
 
   <!-- caf blobs -->
   <remove-project name="android_hardware_qcom_audio" />
