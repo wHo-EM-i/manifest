@@ -20,7 +20,7 @@
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
         </project>
         <project path="vendor/qcom/common" name="vendor_qcom_common" revision="12" remote="wHo-EM-i" clone-depth="1" />
-        <project  name="platform/external/tinyalsa" path="external/tinyalsa" remote="caf_system" />
+        <project  name="platform/external/tinyalsa" path="external/tinyalsa" />
 
   <!-- caf blobs -->
   <remove-project name="android_hardware_qcom_audio" />
