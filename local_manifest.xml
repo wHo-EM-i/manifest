@@ -16,7 +16,6 @@
         <remove-project name="platform/hardware/libhardware" />
         <project name="android_hardware_libhardware" path="hardware/libhardware" remote="AOSPA-S" revision="sapphire" clone-depth="1" />
         <remove-project name="build_soong" />
-        <remove-project name="device/qcom/vendor-common" />
         <project path="build/soong" name="build_soong" remote="wHo-EM-i" revision="12" clone-depth="1" >
         <linkfile src="root.bp" dest="Android.bp" />
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
