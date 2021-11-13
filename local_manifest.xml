@@ -4,9 +4,6 @@
           fetch="https://github.com/wHo-EM-i" />
   <remote name="AOSPA-S"
           fetch="https://github.com/AOSPA" />
-
-  <remote  name="xd"
-          fetch="https://github.com/ChuckProjekt" />
   <remote  name="arrow"
           fetch="https://github.com/ArrowOS"
           review="https://review.arrowos.net/"
@@ -28,7 +25,6 @@
         <project path="external/tinyxml" name="android_external_tinyxml" remote="arrow" />
 
   <!-- caf blobs -->
-  <remove-project name="device_qcom_common" />
   <remove-project name="android_hardware_qcom_audio" />
   <remove-project name="android_hardware_qcom_display" />
   <remove-project name="android_hardware_qcom_media" />
