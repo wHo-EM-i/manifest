@@ -4,6 +4,9 @@
           fetch="https://github.com/wHo-EM-i" />
   <remote name="AOSPA-S"
           fetch="https://github.com/AOSPA" />
+  <remote name="pred"
+          fetch="https://github.com/stormbreaker-project" />
+
 
   <project name="device/sample"/>
 
@@ -18,16 +21,16 @@
         <remove-project name="android_hardware_qcom_audio" />
         <remove-project name="android_hardware_qcom_display" />
         <remove-project name="android_hardware_qcom_media" />
-        <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" revision="12" remote="wHo-EM-i" clone-depth="1" />
+        <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" revision="12-caf_4.19" remote="wHo-EM-i" clone-depth="1" />
         <remove-project name="vendor-qcom-opensource-display-commonsys-intf" />
         <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor-qcom-opensource-display-commonsys-intf" revision="12.0" remote="wHo-EM-i" clone-depth="1" />
-        <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" revision="12-caf" remote="wHo-EM-i" clone-depth="1" />
-        <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" revision="12" remote="wHo-EM-i" clone-depth="1" />
+        <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" revision="12-caf_4.19" remote="wHo-EM-i" clone-depth="1" />
+        <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" revision="12-caf_4.19" remote="wHo-EM-i" clone-depth="1" />
 
   <!-- Trees -->
         <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="wHo-EM-i" revision="12" clone-depth="1" />
         <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="wHo-EM-i" revision="12-caf" clone-depth="1" />
-        <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender" remote="wHo-EM-i" revision="hmp" clone-depth="1" />
+        <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender_4.19" remote="pred" revision="4.19-stable" clone-depth="1" />
         <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um-1" remote="wHo-EM-i" revision="sushi" clone-depth="1" />
 
 </manifest>
