@@ -17,6 +17,17 @@
         <project path="vendor/qcom/common" name="vendor_qcom_common" revision="12" remote="wHo-EM-i" clone-depth="1" />
         <remove-project name="bionic" />
         <project path="bionic" name="bionic" revision="12.0" remote="wHo-EM-i" clone-depth="1" />
+        <remove-project name="build" />
+        <project path="build/make" name="build" remote="wHo-EM-i" revision="12.0" >
+          <copyfile src="core/root.mk" dest="Makefile" />
+          <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+          <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+          <linkfile src="core" dest="build/core" />
+          <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+          <linkfile src="target" dest="build/target" />
+          <linkfile src="tools" dest="build/tools" />
+        </project>
+
 
   <!-- caf blobs -->
         <remove-project name="android_hardware_qcom_audio" />
