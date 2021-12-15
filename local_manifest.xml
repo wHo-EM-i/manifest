@@ -9,6 +9,7 @@
 
   <project name="device/sample"/>
   <project path="hardware/google/pixel" name="platform/hardware/google/pixel" groups="generic_fs,pixel" remote="aosp" />
+  <project path="external/tinyxml" name="platform/external/tinyxml" remote="aosp" revision="refs/tags/android-11.0.0_r46"/>
 
  <!-- Replacements -->
         <remove-project name="platform/vendor/qcom-opensource/usb" />
