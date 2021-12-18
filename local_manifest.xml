@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="wHo-EM-i"
+          fetch="https://github.com/wHo-EM-i" />
+  <remote name="ImSpiDy"
+          fetch="https://github.com/ImSpiDy" />
+
+  <project path="hardware/google/pixel" name="platform/hardware/google/pixel" groups="generic_fs,pixel" remote="aosp" />
+  <project path="external/tinyxml" name="platform/external/tinyxml" remote="aosp" revision="refs/tags/android-11.0.0_r46"/>
+
+ <!-- Replacements -->
+        <remove-project name="platform/vendor/qcom-opensource/usb" />
+        <remove-project name="proprietary_vendor_qcom_common" />
+        <project path="vendor/qcom/common" name="vendor_qcom_common" revision="12" remote="wHo-EM-i" clone-depth="1" />
+        <remove-project name="AOSPA/android_bionic" />
+        <project path="bionic" name="bionic" revision="sapphire" remote="wHo-EM-i" clone-depth="1" />
+
+  <!-- caf blobs
+        <remove-project name="android_hardware_qcom_audio" />
+        <remove-project name="android_hardware_qcom_display" />
+        <remove-project name="android_hardware_qcom_media" /> -->
+        <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" revision="12" remote="wHo-EM-i" clone-depth="1" />
+        <remove-project name="AOSPA/android_vendor_qcom_opensource_commonsys-intf_display" />
+        <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor-qcom-opensource-display-commonsys-intf" revision="sapphire" remote="wHo-EM-i" clone-depth="1" >
+          <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
+          <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
+        </project>
+        <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" revision="12-caf" remote="wHo-EM-i" clone-depth="1" />
+        <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" revision="12" remote="wHo-EM-i" clone-depth="1" />
+
+  <!-- Trees -->
+        <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="wHo-EM-i" revision="12-wip" clone-depth="1" />
+        <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="wHo-EM-i" revision="12-caf" clone-depth="1" />
+        <project path="kernel/xiaomi/lavender" name="aRise-Xtreme_Kernel_Lavender" remote="ImSpiDy" revision="EAS-X2-Qti" />
+        <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um-1" remote="wHo-EM-i" revision="sushi" clone-depth="1" />
+
+</manifest>
