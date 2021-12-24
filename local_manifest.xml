@@ -22,12 +22,13 @@
   <!-- caf blobs
         <remove-project name="android_hardware_qcom_audio" />
         <remove-project name="android_hardware_qcom_display" />
-        <remove-project name="android_hardware_qcom_media" />
+        <remove-project name="android_hardware_qcom_media" /> -->
+        <remove-project name="platform/vendor/qcom-opensource/display-commonsys" />
         <remove-project name="AOSPA/android_vendor_qcom_opensource_commonsys-intf_display" />
         <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor-qcom-opensource-display-commonsys-intf" revision="sapphire" remote="wHo-EM-i" clone-depth="1" >
           <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
           <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
-        </project> -->
+        </project>
 
   <!-- Trees -->
         <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="wHo-EM-i" revision="12-sapphire" clone-depth="1" />
