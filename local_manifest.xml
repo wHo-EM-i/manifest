@@ -3,6 +3,8 @@
 
   <remote name="wHo-EM-i"
           fetch="https://github.com/wHo-EM-i" />
+  <remote name="ImPrashantt"
+          fetch="https://github.com/ImPrashantt" />
 
 <!-- Replacements -->
         <project path="vendor/qcom/common" name="vendor_qcom_common" revision="12" remote="wHo-EM-i" clone-depth="1" />
@@ -23,7 +25,7 @@
   <!-- Trees -->
         <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="wHo-EM-i" revision="12-conquer" clone-depth="1" />
         <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="wHo-EM-i" revision="12-caf" clone-depth="1" />
-        <project path="kernel/xiaomi/lavender" name="aRise-Xtreme_Kernel_Lavender" remote="ImSpiDy" revision="eas-beta" />
+        <project path="kernel/xiaomi/lavender" name="android_kernel_xiaomi_lavender-LTO" remote="ImPrashantt" revision="eas-qti" />
         <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um-1" remote="wHo-EM-i" revision="sushi" clone-depth="1" />
 
 </manifest>
