@@ -24,9 +24,6 @@
         <remove-project name="android_hardware_qcom_display" />
         <remove-project name="android_hardware_qcom_media" /> -->
         <remove-project name="platform/vendor/qcom-opensource/display-commonsys" />
-        <project name="vendor-qcom-opensource-display-commonsys" path="vendor/qcom/opensource/commonsys/display" revision="12" remote="wHo-EM-i" clone-depth="1" >
-          <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
-        </project>
         <remove-project name="AOSPA/android_vendor_qcom_opensource_commonsys-intf_display" />
         <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor-qcom-opensource-display-commonsys-intf" revision="sapphire" remote="wHo-EM-i" clone-depth="1" >
           <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
