@@ -18,6 +18,10 @@
         <project path="vendor/aospa" name="android_vendor_aospa" revision="sapphire" remote="wHo-EM-i" clone-depth="1" >
           <linkfile src="build.sh" dest="rom-build.sh" />
         </project>
+        <remove-project name="AOSPA/android_device_qcom_common" />
+        <project path="device/qcom/common" name="android_device_qcom_common" revision="sapphire" remote="wHo-EM-i" >
+          <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+        </project>
 
   <!-- caf blobs
         <remove-project name="android_hardware_qcom_audio" />
