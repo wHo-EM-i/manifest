@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="wHo-EM-i"
+          fetch="https://github.com/wHo-EM-i" />
+
+        <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.0"/>
+ <!-- Replacements -->
+        <remove-project name="AOSPA/android_bionic" />
+        <project path="bionic" name="bionic" revision="sapphire" remote="wHo-EM-i" clone-depth="1" />
+        <remove-project name="AOSPA/android_vendor_aospa" />
+        <project path="vendor/aospa" name="android_vendor_aospa" revision="sapphire-4.19" remote="wHo-EM-i" clone-depth="1" >
+          <linkfile src="build.sh" dest="rom-build.sh" />
+        </project>
+
+  <!-- caf blobs -->
+        <remove-project name="platform/vendor/qcom-opensource/display-commonsys" />
+        <project name="vendor-qcom-opensource-display-commonsys" path="vendor/qcom/opensource/commonsys/display" revision="12" remote="wHo-EM-i" clone-depth="1" >
+          <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
+        </project>
+        <remove-project name="AOSPA/android_vendor_qcom_opensource_commonsys-intf_display" />
+        <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor-qcom-opensource-display-commonsys-intf" revision="sapphire" remote="wHo-EM-i" clone-depth="1" >
+          <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
+          <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
+        </project>
+
+  <!-- Trees -->
+        <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="wHo-EM-i" revision="sapphire-4.19" clone-depth="1" />
+        <project path="device/xiaomi/sdm660-common" name="device_sdm660-common" remote="wHo-EM-i" revision="sapphire-4.19" clone-depth="1" />
+        <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="wHo-EM-i" revision="sapphire-4.19" clone-depth="1" />
+        <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="wHo-EM-i" revision="sapphire-4.19" clone-depth="1" />
+
+</manifest>
