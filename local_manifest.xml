@@ -5,6 +5,7 @@
 
         <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.0"/>
  <!-- Replacements -->
+        <remove-project name="AOSPA/android_vendor_qcom_opensource_commonsys-intf_wfd" />
         <remove-project name="AOSPA/android_bionic" />
         <project path="bionic" name="bionic" revision="sapphire" remote="wHo-EM-i" clone-depth="1" />
         <remove-project name="AOSPA/android_vendor_aospa" />
