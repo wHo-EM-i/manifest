@@ -11,6 +11,7 @@
 
  <!-- Replacements -->
         <remove-project name="platform/vendor/qcom-opensource/usb" />
+        <remove-project name="AOSPA/android_vendor_qcom_opensource_commonsys-intf_wfd" />
         <remove-project name="proprietary_vendor_qcom_common" />
         <project path="vendor/qcom/common" name="vendor_qcom_common" revision="12" remote="wHo-EM-i" clone-depth="1" />
         <remove-project name="AOSPA/android_bionic" />
