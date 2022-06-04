@@ -11,8 +11,9 @@
         <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor-qcom-opensource-display-commonsys-intf" revision="sapphire" remote="wHo-EM-i" />
 
 
-<!-- caf blobs -->
+<!-- caf blobs -->platform/hardware/qcom/sm7250/gps
         <remove-project name="android_hardware_qcom-caf_common" />
+        <remove-project name="platform/hardware/qcom/sm7250/gps" />
         <remove-project name="android_hardware_qcom_sm7250_display" />
         <remove-project name="android_hardware_qcom_sm7250_media" />
         <remove-project name="android_hardware_qcom_sdm845_display" />
