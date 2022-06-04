@@ -12,6 +12,9 @@
 
 
 <!-- caf blobs -->
+        <remove-project name="android_hardware_qcom-caf_common" />
+        <remove-project name="android_hardware_qcom_sm7250_display" />
+        <remove-project name="android_hardware_qcom_sm7250_media" />
         <remove-project name="android_hardware_qcom_sdm845_display" />
         <remove-project name="android_hardware_qcom_sdm845_media" />
         <remove-project name="platform_hardware_qcom_audio" />
