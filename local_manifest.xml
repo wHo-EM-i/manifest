@@ -25,10 +25,10 @@
           <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
         </project>
 
-  <!-- caf blobs
-        <remove-project name="android_hardware_qcom_audio" />
-        <remove-project name="android_hardware_qcom_display" />
-        <remove-project name="android_hardware_qcom_media" /> -->
+  <!-- caf blobs -->
+        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_hardware_qcom_audio" revision="12-sapphire" remote="wHo-EM-i" clone-depth="1" />
+        <project path="hardware/qcom/display" name="android_hardware_qcom_display" revision="12-sapphire" remote="wHo-EM-i" clone-depth="1" />
+        <project path="hardware/qcom/media" name="android_hardware_qcom_media" revision="12-sapphire" remote="wHo-EM-i" clone-depth="1" />
         <remove-project name="platform/vendor/qcom-opensource/display-commonsys" />
         <remove-project name="AOSPA/android_vendor_qcom_opensource_commonsys-intf_display" />
         <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor-qcom-opensource-display-commonsys-intf" revision="sapphire" remote="wHo-EM-i" clone-depth="1" >
