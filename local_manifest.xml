@@ -26,8 +26,8 @@
         <project path="device/qcom/common" name="android_device_qcom_common" revision="sapphire" remote="wHo-EM-i" >
           <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
         </project>
-        <remove-project name="AtomXCLO/android_external_f2fs-tools" />
-        <project path="external/f2fs-tools" name="android_external_f2fs-tools" remote="wHo-EM-i" clone-depth="1" revision="atomx" />
+        <!-- <remove-project name="AtomXCLO/android_external_f2fs-tools" />
+        <project path="external/f2fs-tools" name="android_external_f2fs-tools" remote="wHo-EM-i" clone-depth="1" revision="atomx" /> -->
 
   <!-- caf blobs -->
         <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_hardware_qcom_audio" revision="12-sapphire" remote="wHo-EM-i" clone-depth="1" />
