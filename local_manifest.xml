@@ -4,8 +4,8 @@
           fetch="https://github.com/wHo-EM-i" />
   <remote name="nexus"
           fetch="https://github.com/projects-nexus" />
-  <remote name="azure"
-          fetch="https://github.com/AzurE-007" />
+  <remote name="xen"
+          fetch="https://github.com/xenxynon" />
 
   <project path="hardware/google/pixel" name="hw_google_pixel" groups="generic_fs,pixel" remote="wHo-EM-i" revision="12.1" />
   <project path="external/tinyxml" name="platform/external/tinyxml" remote="aosp" revision="refs/tags/android-11.0.0_r46"/>
@@ -26,8 +26,7 @@
         <project path="device/qcom/common" name="android_device_qcom_common" revision="sapphire" remote="wHo-EM-i" >
           <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
         </project>
-        <remove-project name="AOSPA/android_external_f2fs-tools" />
-        <project path="external/f2fs-tools" name="android_external_f2fs-tools" remote="azure" revision="sapphire" />
+        <project path="keys" name="certs" remote="xen" revision="pa" />
 
   <!-- caf blobs -->
         <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_hardware_qcom_audio" revision="12-sapphire" remote="wHo-EM-i" clone-depth="1" />
