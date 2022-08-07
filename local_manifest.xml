@@ -6,6 +6,7 @@
           fetch="https://github.com/projects-nexus" />
         <remove-project name="android_bionic" />
         <project path="bionic" name="bionic" revision="dot" remote="wHo-EM-i" clone-depth="1" />
+        <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.0"/>
 
   <!-- caf blobs
         <remove-project name="LineageOS/android_hardware_qcom_audio" />
