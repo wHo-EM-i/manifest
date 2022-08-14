@@ -26,7 +26,7 @@
 
   <!-- Trees -->
         <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="wHo-EM-i" revision="sapphire-4.19" clone-depth="1" />
-        <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="wHo-EM-i" revision="sapphire-4.19" clone-depth="1" />
+        <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="wHo-EM-i" revision="S-CLO" clone-depth="1" />
         <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="wHo-EM-i" revision="sapphire-4.19" clone-depth="1" />
 
 </manifest>
