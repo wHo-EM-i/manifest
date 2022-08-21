@@ -18,7 +18,7 @@
         <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="wHo-EM-i" revision="arrow" clone-depth="1" />
         <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="wHo-EM-i" revision="13-4.19" clone-depth="1" />
         <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="wHo-EM-i" revision="13-4.19" clone-depth="1" />
-        <project path="kernel/xiaomi/sdm660" name="Prashant-1695/kernel_xiaomi_lavender-4.19" remote="github" revision="master" clone-depth="1" />
+        <project path="kernel/xiaomi/sdm660" name="pix106/android_kernel_xiaomi_southwest-4.19" remote="github" revision="main" clone-depth="1" />
         <!--<project path="device/qcom/sepolicy-legacy-um" name="EdwinMoq/android_device_qcom_sepolicy" remote="github" revision="lineage-19.0-legacy-um" clone-depth="1" />  -->
 
 </manifest>
