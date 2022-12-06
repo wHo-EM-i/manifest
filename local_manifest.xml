@@ -6,6 +6,8 @@
           fetch="https://github.com/projects-nexus" />
   <remote name="xen"
           fetch="https://github.com/xenxynon" />
+  <remote name="arrow"
+          fetch="https://github.com/ArrowOS" />
 
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-20.0"/>
 
@@ -28,6 +30,8 @@
         <remove-project name="AOSPA/android_vendor_qcom-opensource_power" />
         <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" revision="topaz" remote="wHo-EM-i" clone-depth="1" />
         <project path="keys" name="certs" remote="xen" revision="pa" />
+        <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" clone-depth="1" revision="arrow-13.0" remote="arrow" />
+        <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" clone-depth="1" revision="arrow-13.0" remote="arrow" />
 
   <!-- caf blobs -->
         <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_hardware_qcom_audio" revision="13-4.4" remote="wHo-EM-i" clone-depth="1" />
