@@ -8,7 +8,7 @@
           fetch="https://github.com/xenxynon" />
 
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-20.0"/>
-  <project path="prebuilts/clang-standalone" name="varunhardgamer/trb_clang" remote="gitlab" clone-depth="1" revision="14"/>
+  <project path="prebuilts/clang-standalone" name="varunhardgamer/trb_clang" remote="gitlab" clone-depth="1" revision="16"/>
 
  <!-- Replacements -->
         <remove-project name="AOSPA/android_vendor_qcom_opensource_commonsys-intf_wfd" />
