@@ -25,23 +25,23 @@
         <!--<remove-project name="AOSPA/android_device_qcom_common" />
         <project path="device/qcom/common" name="android_device_qcom_common" revision="sapphire" remote="wHo-EM-i" >
           <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+        </project>
+        <remove-project name="AOSPA/android_vendor_qcom_opensource_commonsys-intf_display" />
+        <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor-qcom-opensource-display-commonsys-intf" revision="topaz" remote="wHo-EM-i" clone-depth="1" >
+          <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
+          <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
         </project>-->
         <remove-project name="AOSPA/android_vendor_qcom-opensource_power" />
         <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" revision="topaz" remote="wHo-EM-i" clone-depth="1" />
         <project path="keys" name="certs" remote="xen" revision="pa" />
 
   <!-- caf blobs -->
-        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_hardware_qcom_audio" revision="13-4.4" remote="wHo-EM-i" clone-depth="1" />
-        <project path="hardware/qcom/display" name="android_hardware_qcom_display" revision="13-4.4" remote="wHo-EM-i" clone-depth="1" />
-        <project path="hardware/qcom/media" name="android_hardware_qcom_media" revision="13-4.4" remote="wHo-EM-i" clone-depth="1" />
+        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_hardware_qcom_audio" revision="12-sapphire" remote="wHo-EM-i" clone-depth="1" />
+        <project path="hardware/qcom/display" name="android_hardware_qcom_display" revision="12-sapphire" remote="wHo-EM-i" clone-depth="1" />
+        <project path="hardware/qcom/media" name="android_hardware_qcom_media" revision="12-sapphire" remote="wHo-EM-i" clone-depth="1" />
         <remove-project name="platform/vendor/qcom-opensource/display-commonsys" />
         <project name="vendor-qcom-opensource-display-commonsys" path="vendor/qcom/opensource/commonsys/display" revision="13" remote="wHo-EM-i" clone-depth="1" >
           <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
-        </project>
-        <remove-project name="AOSPA/android_vendor_qcom_opensource_commonsys-intf_display" />
-        <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor-qcom-opensource-display-commonsys-intf" revision="topaz" remote="wHo-EM-i" clone-depth="1" >
-          <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
-          <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
         </project>
 
   <!-- Trees -->
