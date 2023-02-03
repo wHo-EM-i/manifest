@@ -8,8 +8,8 @@
           fetch="https://github.com/xenxynon" />
 
 
-  <remove-project name="AOSPA/android_packages_resources_devicesettings" />
-  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" clone-depth="1" revision="lineage-20.0"/>
+  <!--<remove-project name="AOSPA/android_packages_resources_devicesettings" />
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" clone-depth="1" revision="lineage-20.0"/>-->
   <project path="packages/apps/Aperture" name="LineageOS/android_packages_apps_Aperture" remote="github" clone-depth="1" revision="lineage-20.0" />
   <project path="prebuilts/clang-standalone" name="project-nexus/nexus-clang" remote="gitlab" clone-depth="1" revision="nexus-14"/>
 
