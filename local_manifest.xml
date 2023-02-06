@@ -37,9 +37,9 @@
         <remove-project name="platform/vendor/qcom-opensource/display-commonsys" />
         <project name="vendor-qcom-opensource-display-commonsys" path="vendor/qcom/opensource/commonsys/display" revision="13" remote="wHo-EM-i" clone-depth="1" >
           <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
-        </project>-->
+        </project>
         <remove-project name="AOSPA/android_vendor_qcom-opensource_power" />
-        <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" revision="topaz" remote="wHo-EM-i" clone-depth="1" />
+        <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" revision="topaz" remote="wHo-EM-i" clone-depth="1" />-->
         <project path="keys" name="certs" remote="xen" revision="pa" clone-depth="1" />
 
   <!-- caf blobs -->
