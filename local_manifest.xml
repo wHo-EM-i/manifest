@@ -14,7 +14,7 @@
 
   <!-- Trees -->
         <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="wHo-EM-i" revision="T-4.19-WIP" clone-depth="1" />
-        <project path="kernel/xiaomi/lavender" name="ImSpiDy/kernel_xiaomi_lavender-4.19" remote="github" revision="X1" clone-depth="1" />
+        <project path="kernel/xiaomi/lavender" name="ImSpiDy/kernel_xiaomi_lavender-4.19" remote="github" revision="X2B" clone-depth="1" />
         <!--<project path="device/qcom/sepolicy-legacy-um" name="EdwinMoq/android_device_qcom_sepolicy" remote="github" revision="lineage-19.0-legacy-um" clone-depth="1" />
         <remove-project name="LineageOS/android_vendor_qcom_opensource_power" />
         <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" revision="topaz" remote="wHo-EM-i" clone-depth="1" />  -->
