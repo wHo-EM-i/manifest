@@ -7,6 +7,7 @@
   <remote name="xen"
           fetch="https://github.com/xenxynon" />
 
+        <project path="prebuilts/clang-standalone" name="project-nexus/nexus-clang" remote="gitlab" clone-depth="1" revision="nexus-14"/>
 
  <!-- Replacements -->
         <remove-project name="AOSPA/android_vendor_qcom-opensource_usb" />
