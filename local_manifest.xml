@@ -10,7 +10,6 @@
         <project path="prebuilts/clang-standalone" name="project-nexus/nexus-clang" remote="gitlab" clone-depth="1" revision="nexus-14"/>
 
  <!-- Replacements -->
-        <remove-project name="AOSPA/android_vendor_qcom-opensource_usb" />
         <remove-project name="AOSPA/android_bionic" />
         <project path="bionic" name="bionic" revision="topaz" remote="wHo-EM-i" clone-depth="1" />
         <remove-project name="AOSPA/android_vendor_aospa" />
