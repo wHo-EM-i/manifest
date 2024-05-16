@@ -3,14 +3,15 @@
   <remote name="wHo-EM-i"
           fetch="https://github.com/wHo-EM-i" />
   <remote  name="los-miatoll"     fetch="https://github.com/los-miatoll" />
+<remote  name="ImSpiDy"     fetch="https://github.com/ImSpiDy" />
 
-  <!-- Remove HALs -->
+  <!-- Remove HALs
   <remove-project name="LineageOS/android_packages_apps_Settings" />
   <remove-project name="LineageOS/android_frameworks_base" />
   <remove-project name="LineageOS/android_system_core" />
-  <remove-project name="LineageOS/android_build" />
+  <remove-project name="LineageOS/android_build" />-->
 
- <!-- Replacements  -->
+ <!-- Replacements
   <project path="frameworks/base" name="android_frameworks_base" remote="wHo-EM-i" revision="lineage-20.0" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="los-miatoll" revision="lineage-20.0" />
   <project path="system/core" name="android_system_core" remote="los-miatoll" revision="lineage-20.0" />
@@ -22,7 +23,7 @@
     <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
-  </project>
+  </project> -->
 
   <!-- caf blobs
         <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" revision="11" remote="wHo-EM-i" />
@@ -31,11 +32,13 @@
 
   <!-- Trees
         <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="wHo-EM-i" revision="los-19"/>
+        <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="wHo-EM-i" revision="los-19" />
         <project path="device/xiaomi/sdm660-common" name="device_sdm660-common" remote="wHo-EM-i" revision="los-19"/>
         <project path="kernel/xiaomi/sdm660" name="kernel_xiaomi_lavender" remote="wHo-EM-i" revision="hmp" />
-        <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="wHo-EM-i" revision="los-19" />
         <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="wHo-EM-i" revision="los-19"/>
-        <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="wHo-EM-i" revision="eleven"  clone-depth="1" />
-        -->
+        <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="wHo-EM-i" revision="eleven"  clone-depth="1" />        -->
+        <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender-4.4" remote="ImSpiDy" clone-depth="1" revision="qti-oldcam" />
+        <project path="device/xiaomi/lavender" name="device_xiaomi_lavender-old" remote="wHo-EM-i"  clone-depth="1" revision="T"/>
+        <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="wHo-EM-i"  clone-depth="1" revision="T" />
 
 </manifest>
