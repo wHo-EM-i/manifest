@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="wHo-EM-i"
-          fetch="https://github.com/wHo-EM-i" />
-  <remote  name="los-miatoll"     fetch="https://github.com/los-miatoll" />
-<remote  name="ImSpiDy"     fetch="https://github.com/ImSpiDy" />
+  <remote name="wHo-EM-i"       fetch="https://github.com/wHo-EM-i" />
+  <remote  name="ImSpiDy"       fetch="https://github.com/ImSpiDy" />
+  <remote  name="nexus"       fetch="https://gitlab.com/Project-Nexus" />
+  <remote  name="ext"       fetch="https://github.com/Los-Ext"       revision="refs/heads/12.1" />
 
-  <!-- Remove HALs
-  <remove-project name="LineageOS/android_packages_apps_Settings" />
-  <remove-project name="LineageOS/android_frameworks_base" />
-  <remove-project name="LineageOS/android_system_core" />
-  <remove-project name="LineageOS/android_build" />-->
+  <!-- Remove HALs -->
+  <remove-project path="art" />
+  <remove-project path="bionic" />
+  <remove-project path="build/make" />
+  <remove-project path="build/soong" />
+  <remove-project path="frameworks/base" />
+  <remove-project path="packages/apps/Settings" />
+  <remove-project path="system/core" />
 
- <!-- Replacements
-  <project path="frameworks/base" name="android_frameworks_base" remote="wHo-EM-i" revision="lineage-20.0" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="los-miatoll" revision="lineage-20.0" />
-  <project path="system/core" name="android_system_core" remote="los-miatoll" revision="lineage-20.0" />
-  <project path="build/make" name="android_build" remote="los-miatoll" revision="lineage-20.0" groups="pdk" >
+ <!-- Replacements -->
+  <project path="art" name="android_art" remote="ext" clone-depth="1" />
+  <project path="bionic" name="android_bionic" remote="ext" clone-depth="1" />
+  <project path="build/make" name="android_build" groups="pdk" remote="ext" clone-depth="1" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -23,7 +25,14 @@
     <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
-  </project> -->
+  </project>
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="ext" clone-depth="1" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>  
+  <project path="frameworks/base" name="android_frameworks_base" remote="wHo-EM-i" clone-depth="1" revision="12.1" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ext" clone-depth="1" />
+  <project path="system/core" name="android_system_core" remote="ext" clone-depth="1" />
 
   <!-- caf blobs
         <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" revision="11" remote="wHo-EM-i" />
@@ -32,13 +41,9 @@
 
   <!-- Trees
         <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="wHo-EM-i" revision="los-19"/>
-        <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="wHo-EM-i" revision="los-19" />
-        <project path="device/xiaomi/sdm660-common" name="device_sdm660-common" remote="wHo-EM-i" revision="los-19"/>
-        <project path="kernel/xiaomi/sdm660" name="kernel_xiaomi_lavender" remote="wHo-EM-i" revision="hmp" />
-        <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="wHo-EM-i" revision="los-19"/>
-        <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="wHo-EM-i" revision="eleven"  clone-depth="1" />        -->
-        <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender-4.4" remote="ImSpiDy" clone-depth="1" revision="qti-oldcam" />
-        <project path="device/xiaomi/lavender" name="device_xiaomi_lavender-old" remote="wHo-EM-i"  clone-depth="1" revision="T"/>
-        <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="wHo-EM-i"  clone-depth="1" revision="T" />
-
+        <project path="device/xiaomi/sdm660-common" name="device_sdm660-common" remote="wHo-EM-i" revision="los-19"/>       -->
+        <project path="kernel/xiaomi/sdm660" name="sonix_kernel_sdm660" remote="ImSpiDy"  clone-depth="1" revision="sonix"/>
+        <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="ImSpiDy"  clone-depth="1" revision="11"/>
+        <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="ImSpiDy"  clone-depth="1" revision="11" />
+        <project path="prebuilts/clang/host/linux-x86/custom-clang" name="nexus-clang" remote="nexus"  clone-depth="1" revision="nexus-14" />
 </manifest>
