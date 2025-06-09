@@ -6,13 +6,13 @@
   <remote  name="ext"       fetch="https://github.com/Los-Ext"       revision="refs/heads/12.1" />
 
   <!-- Remove HALs -->
-  <remove-project path="art" />
-  <remove-project path="bionic" />
-  <remove-project path="build/make" />
-  <remove-project path="build/soong" />
-  <remove-project path="frameworks/base" />
-  <remove-project path="packages/apps/Settings" />
-  <remove-project path="system/core" />
+  <remove-project name="LineageOS-UL/android_art" />
+  <remove-project name="LineageOS-UL/android_bionic" />
+  <remove-project name="LineageOS/android_build" />
+  <remove-project name="LineageOS/android_build_soong" />
+  <!-- <remove-project name="LineageOS-UL/android_frameworks_base" />
+  <remove-project name="LineageOS/android_packages_apps_Settings" /> -->
+  <remove-project name="LineageOS-UL/android_system_core" />
 
  <!-- Replacements -->
   <project path="art" name="android_art" remote="ext" clone-depth="1" />
@@ -30,8 +30,8 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>  
-  <project path="frameworks/base" name="android_frameworks_base" remote="wHo-EM-i" clone-depth="1" revision="12.1" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ext" clone-depth="1" />
+  <!-- <project path="frameworks/base" name="android_frameworks_base" remote="wHo-EM-i" clone-depth="1" revision="12.1" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ext" clone-depth="1" /> -->
   <project path="system/core" name="android_system_core" remote="ext" clone-depth="1" />
 
   <!-- caf blobs
@@ -42,6 +42,7 @@
   <!-- Trees
         <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="wHo-EM-i" revision="los-19"/>
         <project path="device/xiaomi/sdm660-common" name="device_sdm660-common" remote="wHo-EM-i" revision="los-19"/>       -->
+        
         <project path="kernel/xiaomi/sdm660" name="sonix_kernel_sdm660" remote="ImSpiDy"  clone-depth="1" revision="sonix"/>
         <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="ImSpiDy"  clone-depth="1" revision="11"/>
         <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="ImSpiDy"  clone-depth="1" revision="11" />
