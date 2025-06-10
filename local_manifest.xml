@@ -6,13 +6,15 @@
   <remote  name="ext"       fetch="https://github.com/Los-Ext"       revision="refs/heads/12.1" />
 
   <!-- Remove HALs -->
-  <remove-project name="LineageOS-UL/android_art" />
-  <remove-project name="LineageOS-UL/android_bionic" />
+  <remove-project path="art" />
+  <remove-project name="LineageOS/android_bionic" />
   <remove-project name="LineageOS/android_build" />
   <remove-project name="LineageOS/android_build_soong" />
-  <!-- <remove-project name="LineageOS-UL/android_frameworks_base" />
-  <remove-project name="LineageOS/android_packages_apps_Settings" /> -->
-  <remove-project name="LineageOS-UL/android_system_core" />
+  <remove-project name="LineageOS/android_frameworks_native" />
+  <!-- <remove-project name="LineageOS/android_frameworks_base" /> -->
+  <remove-project name="LineageOS/android_packages_apps_Settings" />
+  <remove-project name="LineageOS/android_system_core" />
+  <remove-project name="LineageOS/android_vendor_lineage" />
 
  <!-- Replacements -->
   <project path="art" name="android_art" remote="ext" clone-depth="1" />
@@ -29,10 +31,12 @@
   <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="ext" clone-depth="1" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>  
-  <!-- <project path="frameworks/base" name="android_frameworks_base" remote="wHo-EM-i" clone-depth="1" revision="12.1" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ext" clone-depth="1" /> -->
+  </project>
+  <project path="frameworks/native" name="android_frameworks_native" remote="ext" clone-depth="1" />  
+  <!-- <project path="frameworks/base" name="android_frameworks_base" remote="wHo-EM-i" clone-depth="1" revision="12.1" /> -->
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ext" clone-depth="1" />
   <project path="system/core" name="android_system_core" remote="ext" clone-depth="1" />
+  <project path="vendor/lineage" name="android_vendor_lineage" remote="ext" clone-depth="1" />
 
   <!-- caf blobs
         <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" revision="11" remote="wHo-EM-i" />
