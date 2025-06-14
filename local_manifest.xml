@@ -11,7 +11,7 @@
   <remove-project name="LineageOS/android_build" />
   <remove-project name="LineageOS/android_build_soong" />
   <remove-project name="LineageOS/android_frameworks_native" />
-  <!-- <remove-project name="LineageOS/android_frameworks_base" /> -->
+  <remove-project name="LineageOS/android_frameworks_base" />
   <remove-project name="LineageOS/android_packages_apps_Settings" />
   <remove-project name="LineageOS/android_system_core" />
   <remove-project name="LineageOS/android_vendor_lineage" />
@@ -33,7 +33,7 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="frameworks/native" name="android_frameworks_native" remote="ext" clone-depth="1" />  
-  <!-- <project path="frameworks/base" name="android_frameworks_base" remote="wHo-EM-i" clone-depth="1" revision="12.1" /> -->
+  <project path="frameworks/base" name="android_frameworks_base" remote="wHo-EM-i" clone-depth="1" revision="12.1" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ext" clone-depth="1" />
   <project path="system/core" name="android_system_core" remote="ext" clone-depth="1" />
   <project path="vendor/lineage" name="android_vendor_lineage" remote="ext" clone-depth="1" />
