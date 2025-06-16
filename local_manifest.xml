@@ -48,7 +48,7 @@
         <project path="device/xiaomi/sdm660-common" name="device_sdm660-common" remote="wHo-EM-i" revision="los-19"/>       -->
         
         <project path="kernel/xiaomi/sdm660" name="sonix_kernel_sdm660" remote="ImSpiDy"  clone-depth="1" revision="sonix"/>
-        <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="ImSpiDy"  clone-depth="1" revision="11"/>
-        <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="ImSpiDy"  clone-depth="1" revision="11" />
+        <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="ImSpiDy"  clone-depth="1" revision="12.1"/>
+        <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="ImSpiDy"  clone-depth="1" revision="12.1" />
         <project path="prebuilts/clang/host/linux-x86/custom-clang" name="nexus-clang" remote="nexus"  clone-depth="1" revision="nexus-14" />
 </manifest>
