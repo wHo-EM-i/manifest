@@ -15,6 +15,7 @@
   <remove-project name="LineageOS/android_packages_apps_Settings" />
   <remove-project name="LineageOS/android_system_core" />
   <remove-project name="LineageOS/android_vendor_lineage" />
+  <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
 
  <!-- Replacements -->
   <project path="art" name="android_art" remote="ext" clone-depth="1" />
@@ -37,6 +38,7 @@
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ext" clone-depth="1" />
   <project path="system/core" name="android_system_core" remote="ext" clone-depth="1" />
   <project path="vendor/lineage" name="android_vendor_lineage" remote="ext" clone-depth="1" />
+  <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="ext" clone-depth="1" />
 
   <!-- caf blobs
         <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" revision="11" remote="wHo-EM-i" />
