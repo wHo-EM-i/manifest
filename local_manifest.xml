@@ -5,6 +5,7 @@
   <remote  name="nexus"       fetch="https://gitlab.com/Project-Nexus" />
   <remote  name="ext"       fetch="https://github.com/Los-Ext"       revision="refs/heads/12.1" />
   <remote  name="droid-legacy"       fetch="https://github.com/droid-legacy"       revision="refs/heads/lineage-19.1" />
+  <remote  name="arcana"       fetch="https://github.com/projectarcana-aosp"       revision="refs/heads/12.x" />
 
   <!-- Remove HALs -->
   <remove-project path="art" />
@@ -18,6 +19,8 @@
   <remove-project name="LineageOS/android_vendor_lineage" />
   <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
   <remove-project path="packages/apps/ThemePicker" />
+  <remove-project path="external/arm-optimized-routines" />
+  <remove-project path="external/jemalloc_new" />
 
  <!-- Replacements -->
   <project path="art" name="android_art" remote="ext" clone-depth="1" />
@@ -41,7 +44,11 @@
   <project path="system/core" name="android_system_core" remote="ext" clone-depth="1" />
   <project path="vendor/lineage" name="android_vendor_lineage" remote="ext" clone-depth="1" />
   <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="ext" clone-depth="1" />
+
+  <!-- external repos -->
   <project name="android_packages_apps_ThemePicker" path="packages/apps/ThemePicker" remote="droid-legacy" clone-depth="1" />
+  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="arcana" />
+  <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="arcana" />
 
   <!-- caf blobs
         <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" revision="11" remote="wHo-EM-i" />
