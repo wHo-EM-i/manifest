@@ -9,6 +9,8 @@
           fetch="https://github.com/K90PM-Development" />
   <remote name="OnePlus-SM8850-Development"
           fetch="https://github.com/OnePlus-SM8850-Development" />
+  <remote name="Los-Ext"
+          fetch="https://github.com/Los-Ext" />
   <remote name="wHoEMi-cberq"
           fetch="https://codeberg.org/wHo-EM-i" />
   <remote name="lolipuru-cberq"
@@ -19,40 +21,24 @@
         <project path="device/xiaomi/sm8850-common" name="android_device_xiaomi_sm8850-common" remote="wHoEMi" revision="lineage-24.0" />
         <project path="device/xiaomi/myron-kernel" name="device_xiaomi_myron-kernel" remote="wHoEMi" clone-depth="1" revision="main" />
         <project path="vendor/xiaomi/sm8850-common" name="android_vendor_xiaomi_sm8850-common" remote="wHoEMi" clone-depth="1" revision="lineage-24.0" />
-        <project path="vendor/xiaomi/myron" name="android_vendor_xiaomi_myron" remote="wHoEMi-cberq" clone-depth="1" revision="lineage-24.0" />
+        <!--<project path="vendor/xiaomi/myron" name="android_vendor_xiaomi_myron" remote="wHoEMi-cberq" clone-depth="1" revision="lineage-24.0" />-->
         <project path="device/xiaomi/myron-miuicamera" name="android_device_xiaomi_myron-miuicamera" remote="K90PM-Development" clone-depth="1" revision="main" />
         <project path="vendor/xiaomi/myron-miuicamera" name="proprietary_vendor_xiaomi_myron-miuicamera" remote="K90PM-Development" clone-depth="1" revision="lineage-24.0" />
         <project path="device/qcom/sepolicy_vndr/sm8850" name="android_device_qcom_sepolicy_vndr" remote="K90PM-Development" revision="lineage-24.0-caf-sm8850" />
-        <project path="hardware/xiaomi" name="Los-Ext/android_hardware_xiaomi" revision="17" />
+        <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="Los-Ext" revision="17" />
         <remove-project path="hardware/qcom-caf/common" />
-        <project path="hardware/qcom-caf/common" name="OnePlus-SM8850-Development/android_hardware_qcom-caf_common" revision="lineage-23.2" groups="qcom" >
+        <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="OnePlus-SM8850-Development" revision="lineage-23.2" groups="qcom" >
         <!-- add guard for AOSP hardware/qcom dir -->
         <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
         <!-- add guards for CAF repositories -->
         <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
-        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" />
-        <!--
-        <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
-        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
-        -->
-        <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
-        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
-        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
-        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
-        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
-        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
-        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450/Android.bp" />
-        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450-6.6/Android.bp" />
-        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
-        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
-        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8750/Android.bp" />
         <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8850/Android.bp" />
         </project>
-        <project path="hardware/qcom-caf/sm8850/audio/primary-hal" name="OnePlus-SM8850-Development/android_hardware_qcom_audio-ar" groups="qcom,kaanapali-audio" revision="lineage-23.2-caf-sm8850" />
+        <project path="hardware/qcom-caf/sm8850/audio/primary-hal" name="android_hardware_qcom_audio-ar" remote="OnePlus-SM8850-Development" groups="qcom,kaanapali-audio" revision="lineage-23.2-caf-sm8850" />
         <remove-project path="vendor/qcom/opensource/usb" />
-        <project path="vendor/qcom/opensource/usb" name="OnePlus-SM8850-Development/android_vendor_qcom_opensource_usb" revision="lineage-23.2" groups="qcom,kaanapali-vendor" />
+        <project path="vendor/qcom/opensource/usb" name="LineageOS/android_vendor_qcom_opensource_usb" revision="lineage-24.0" groups="qcom,kaanapali-vendor" />
         <remove-project path="hardware/qcom-caf/thermal" />
-        <project path="hardware/qcom-caf/thermal" name="OnePlus-SM8850-Development/android_hardware_qcom_thermal" revision="lineage-23.2" groups="qcom,kaanapali-vendor" />
+        <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" remote="OnePlus-SM8850-Development" revision="lineage-23.2" groups="qcom,kaanapali-vendor" />
         
 </manifest>
 
